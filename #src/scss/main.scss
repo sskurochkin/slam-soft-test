@@ -1,0 +1,31 @@
+@import '_reset.scss';
+@import '_vars.scss';
+@import '_fonts.scss';
+
+*,
+*:after,
+*:before{
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    background-color: $bgc;
+    font-family: 'Roboto', serif;
+}
+.page{
+    font-size: 1.5rem;
+}
+
+.container{
+    max-width: 1640px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+
+
+
+@import '_icons.scss';
+@import '_header.scss';
