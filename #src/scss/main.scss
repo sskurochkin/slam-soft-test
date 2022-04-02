@@ -24,8 +24,16 @@ body{
     margin: 0 auto;
 }
 
+.hover-y{
+    transition: filter 0.3s ease;
+    &:hover{
+        filter: invert(50%) sepia(100%) saturate(600%)
+    }
+}
 
 
 
+
+@import '_slider.scss';
 @import '_icons.scss';
 @import '_header.scss';
