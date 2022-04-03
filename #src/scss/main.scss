@@ -30,10 +30,32 @@ body{
         filter: invert(50%) sepia(100%) saturate(600%)
     }
 }
+.btn{
+    background-color: $primary;
+    padding: 12px 14px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: inline-block;
+    border-radius: 2rem;
+    border: 1px solid $primary;
+    cursor: pointer;
+    transition: all .3s ease;
+    &:hover{
+        opacity: .6;
+    }
+    &--outline{
+        background-color: #fff;
+        color: $primary;
+    }
+}
 
 
 
 
-@import '_slider.scss';
+@import '_slider.scss'; 
 @import '_icons.scss';
 @import '_header.scss';
+@import '_promo.scss';
+@import '_card.scss';
+@import '_footer.scss';

@@ -1,0 +1,17 @@
+.promo{
+    margin-bottom: 40px;
+    &__title{
+        font-weight: 700;
+        font-size: 4.8rem;
+        color: $primary;
+        margin-bottom: 30px;
+    }
+    &__slider{
+        padding: 0 110px;
+    }
+    .prev,
+    .next{
+        top: 190px;
+        bottom: auto;
+    }
+}

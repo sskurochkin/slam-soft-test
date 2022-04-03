@@ -14,7 +14,7 @@
 	<!-- Add the slick-theme.css if you want default styling -->
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 	<link rel="stylesheet" href="./assets/css/main.css">
-	<title>Slam soft test page</title>
+	<title>Slam soft test</title>
 </head>
 
 <body>
@@ -34,9 +34,9 @@
 						<li><a href="tel:+375296461616" class="menu__link"><span
 									class="ico i-mts menu__icon"></span><span class="ico i-a1 menu__icon"></span>+375
 								(29) 646-16-16</a></li>
-						<li><a href="#" class="menu__link"><span class="ico i-phone menu__icon"></span>Обратный
+						<li><a href="#" class="menu__link menu__link--underline"><span class="ico i-phone menu__icon"></span>Обратный
 								звонок</a></li>
-						<li><a href="#" class="menu__link"><span class="ico i-login menu__icon"></span>Вход</a></li>
+						<li><a href="#" class="menu__link menu__link--underline"><span class="ico i-login menu__icon"></span>Вход</a></li>
 					</ul>
 				</nav>
 				<div class="header__content">
@@ -51,7 +51,7 @@
 						<input type="text" name="text" id="text" class="header__search"
 							placeholder="Введите текст для поиска">
 					</div>
-					<div class="header__fav"><span class="ico i-fav hover-y"></span>Избранное</div>
+					<div class="header__fav"><span class="ico i-fav"></span>Избранное</div>
 					<div class="header__cart"><span class="ico i-cart cart"><span
 								class="cart__count">3</span></span><span class="header__price">232t66</span></div>
 				</div>
@@ -62,19 +62,24 @@
 
 			<div class="container">
 				<div class="slider first-slider">
-					<a href="#" class="slider__item"><img data-lazy="./assets/img/slider-1.png"  alt="" class="slider__pic">
+					<a href="#" class="slider__item"><img data-lazy="./assets/img/slider-1.png" alt=""
+							class="slider__pic">
 						<p><span>1</span></p>
 					</a>
-					<a href="#" class="slider__item"><img data-lazy="./assets/img/slider-1.png"  alt="" class="slider__pic">
+					<a href="#" class="slider__item"><img data-lazy="./assets/img/slider-1.png" alt=""
+							class="slider__pic">
 						<p><span>2</span></p>
 					</a>
-					<a href="#" class="slider__item"><img data-lazy="./assets/img/slider-1.png"  alt="" class="slider__pic">
+					<a href="#" class="slider__item"><img data-lazy="./assets/img/slider-1.png" alt=""
+							class="slider__pic">
 						<p><span>3</span></p>
 					</a>
-					<a href="#" class="slider__item"><img data-lazy="./assets/img/slider-1.png"  alt="" class="slider__pic">
+					<a href="#" class="slider__item"><img data-lazy="./assets/img/slider-1.png" alt=""
+							class="slider__pic">
 						<p><span>4</span></p>
 					</a>
-					<a href="#" class="slider__item"><img data-lazy="./assets/img/slider-1.png"  alt="" class="slider__pic">
+					<a href="#" class="slider__item"><img data-lazy="./assets/img/slider-1.png" alt=""
+							class="slider__pic">
 						<p><span>5</span></p>
 					</a>
 					<!-- <a href="#" class="slider__item"><img src="./assets/img/slider-1.png" alt="" class="slider__pic">
@@ -90,13 +95,253 @@
 						<p>Пятый слайд</p>
 					</a> -->
 				</div>
+
+				<div class="promo">
+					<h2 class="promo__title">Promo block</h2>
+					<div class="promo__slider slider">
+						<div class="card">
+							<div class="card__header">
+								<div class="card__stock stock">
+									<span class="stock__discount">Акция - 25%</span>
+									<span class="stock__discount stock__discount--new">Новинка</span>
+									<span class="stock__discount stock__discount--rec">Рекомендуем</span>
+								</div>
+								<img src="https://picsum.photos/200" alt="" class="card__pic">
+								<span class="card__fav ico i-fav hover-y"></span>
+							</div>
+							<div class="card__info">
+								<p class="avialability">В наличии</p>
+								<p class="vendor">Код:&nbsp;<span class="vendor-code">4744481010818</span></p>
+							</div>
+							<div class="card__desc">Консервы пастеризованные. Бульон куриный жидкий., 350мл. Консервы
+								пастеризованные. Бульон
+							</div>
+							<div class="card__order">
+								<span class="card__price">500.20 р.</span>
+								<span class="card__price card__price--discount">600.20 р.</span>
+								<span class="ico i-cart cart card__cart"><span class="cart__count">3</span></span>
+							</div>
+							<div class="card__count">
+								<div class="card__count-input">
+									<span class="counter inc ico i-inc hover-y"></span>
+									<span class="card__count-number">200</span>
+									<span class="counter dec ico i-dec hover-y"></span>
+								</div>
+								<div class="card__buttons">
+									<div class="card__btn btn btn--outline">Купить в 1 клик</div>
+									<div class="card__btn btn">В корзину</div>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="card">
+							<div class="card__header">
+								<div class="card__stock stock">
+									<span class="stock__discount">Акция - 25%</span>
+									<span class="stock__discount stock__discount--new">Новинка</span>
+								</div>
+								<img src="https://picsum.photos/200" alt="" class="card__pic">
+								<span class="card__fav ico i-fav hover-y"></span>
+							</div>
+							<div class="card__info">
+								<p class="avialability">В наличии</p>
+								<p class="vendor">Код:&nbsp;<span class="vendor-code">4744481010818</span></p>
+							</div>
+							<div class="card__desc">Консервы пастеризованные. Бульон куриный жидкий., 350мл. Консервы
+								пастеризованные. Бульон
+							</div>
+							<div class="card__order">
+								<span class="card__price">500.20 р.</span>
+								<span class="card__price card__price--discount">600.20 р.</span>
+								<span class="ico i-cart cart card__cart"><span class="cart__count">3</span></span>
+							</div>
+							<div class="card__count">
+								<div class="card__count-input">
+									<span class="counter inc ico i-inc hover-y"></span>
+									<span class="card__count-number">200</span>
+									<span class="counter dec ico i-dec hover-y"></span>
+								</div>
+								<div class="card__buttons">
+									<div class="card__btn btn btn--outline">Купить в 1 клик</div>
+									<div class="card__btn btn">В корзину</div>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="card">
+							<div class="card__header">
+								<div class="card__stock stock">
+								</div>
+								<img src="https://picsum.photos/200" alt="" class="card__pic">
+								<span class="card__fav ico i-fav hover-y"></span>
+							</div>
+							<div class="card__info">
+								<p class="avialability">В наличии</p>
+								<p class="vendor">Код:&nbsp;<span class="vendor-code">4744481010818</span></p>
+							</div>
+							<div class="card__desc">Консервы пастеризованные. Бульон куриный жидкий., 350мл. Консервы
+								пастеризованные. Бульон
+							</div>
+							<div class="card__order">
+								<span class="card__price">500.20 р.</span>
+							</div>
+							<div class="card__count">
+								<div class="card__count-input">
+									<span class="counter inc ico i-inc hover-y"></span>
+									<span class="card__count-number">200</span>
+									<span class="counter dec ico i-dec hover-y"></span>
+								</div>
+								<div class="card__buttons">
+									<div class="card__btn btn btn--outline">Купить в 1 клик</div>
+									<div class="card__btn btn">В корзину</div>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="card">
+							<div class="card__header">
+								<div class="card__stock stock">
+									<span class="stock__discount">Акция - 25%</span>
+									<span class="stock__discount stock__discount--new">Новинка</span>
+									<span class="stock__discount stock__discount--rec">Рекомендуем</span>
+								</div>
+								<img src="https://picsum.photos/200" alt="" class="card__pic">
+								<span class="card__fav ico i-fav hover-y"></span>
+							</div>
+							<div class="card__info">
+								<p class="avialability avialability-not">Отсутствует</p>
+								<p class="vendor">Код:&nbsp;<span class="vendor-code">4744481010818</span></p>
+							</div>
+							<div class="card__desc">Рисовые хлебцы с молочным шоколадом, 34г
+							</div>
+							<div class="card__order">
+								<span class="card__price">500.20 р.</span>
+								<span class="card__price card__price--discount">600.20 р.</span>
+							</div>
+							<div class="card__count">
+								<div class="card__count-input">
+									<span class="counter inc ico i-inc hover-y"></span>
+									<span class="card__count-number">200</span>
+									<span class="counter dec ico i-dec hover-y"></span>
+								</div>
+								<div class="card__buttons">
+									<div class="card__btn btn btn--outline">Купить в 1 клик</div>
+									<div class="card__btn btn">В корзину</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="card">
+							<div class="card__header">
+								<div class="card__stock stock">
+									<span class="stock__discount">Акция - 25%</span>
+									<span class="stock__discount stock__discount--new">Новинка</span>
+									<span class="stock__discount stock__discount--rec">Рекомендуем</span>
+								</div>
+								<img src="https://picsum.photos/200" alt="" class="card__pic">
+								<span class="card__fav ico i-fav hover-y"></span>
+							</div>
+							<div class="card__info">
+								<p class="avialability">В наличии</p>
+								<p class="vendor">Код:&nbsp;<span class="vendor-code">4744481010818</span></p>
+							</div>
+							<div class="card__desc">Консервы пастеризованные. Бульон куриный жидкий., 350мл. Консервы
+								пастеризованные. Бульон
+							</div>
+							<div class="card__order">
+								<span class="card__price">500.20 р.</span>
+								<span class="card__price card__price--discount">600.20 р.</span>
+								<span class="ico i-cart cart card__cart"><span class="cart__count">3</span></span>
+							</div>
+							<div class="card__count">
+								<div class="card__count-input">
+									<span class="counter inc ico i-inc hover-y"></span>
+									<span class="card__count-number">200</span>
+									<span class="counter dec ico i-dec hover-y"></span>
+								</div>
+								<div class="card__buttons">
+									<div class="card__btn btn btn--outline">Купить в 1 клик</div>
+									<div class="card__btn btn">В корзину</div>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="card">
+							<div class="card__header">
+								<div class="card__stock stock">
+									<span class="stock__discount">Акция - 25%</span>
+									<span class="stock__discount stock__discount--new">Новинка</span>
+									<span class="stock__discount stock__discount--rec">Рекомендуем</span>
+								</div>
+								<img src="https://picsum.photos/200" alt="" class="card__pic">
+								<span class="card__fav ico i-fav hover-y"></span>
+							</div>
+							<div class="card__info">
+								<p class="avialability">В наличии</p>
+								<p class="vendor">Код:&nbsp;<span class="vendor-code">4744481010818</span></p>
+							</div>
+							<div class="card__desc">Консервы пастеризованные. Бульон куриный жидкий., 350мл. Консервы
+								пастеризованные. Бульон
+							</div>
+							<div class="card__order">
+								<span class="card__price">500.20 р.</span>
+								<span class="card__price card__price--discount">600.20 р.</span>
+								<span class="ico i-cart cart card__cart"><span class="cart__count">3</span></span>
+							</div>
+							<div class="card__count">
+								<div class="card__count-input">
+									<span class="counter inc ico i-inc hover-y"></span>
+									<span class="card__count-number">200</span>
+									<span class="counter dec ico i-dec hover-y"></span>
+								</div>
+								<div class="card__buttons">
+									<div class="card__btn btn btn--outline">Купить в 1 клик</div>
+									<div class="card__btn btn">В корзину</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
 			</div>
 
 
 		</main>
 
 		<footer class="footer">
-
+			<div class="container">
+			<nav class="footer__menu">
+				<ul class="footer__list">
+					<li>Каталог</li>
+					<li><a href="#" class="footer__link">Акции</a></li>
+					<li><a href="#" class="footer__link">Детям</a></li>
+					<li><a href="#" class="footer__link">Подарки</a></li>
+				</ul>
+				<ul class="footer__list">
+					<li>Информация</li>
+					<li><a href="#" class="footer__link">Доставка и оплата</a></li>
+					<li><a href="#" class="footer__link">Программа лояльности</a></li>
+					<li><a href="#" class="footer__link">О компании</a></li>
+				</ul>
+				<ul class="footer__list">
+					<li>Карта сайта</li>
+					<li><a href="#" class="footer__link">Доставка и оплата</a></li>
+					<li><a href="#" class="footer__link">Программа лояльности</a></li>
+					<li><a href="#" class="footer__link">О компании</a></li>
+				</ul>
+				<ul class="footer__list">
+					<li>Контакты</li>
+					<li><a href="#" class="footer__link">Доставка и оплата</a></li>
+					<li><a href="#" class="footer__link">Программа лояльности</a></li>
+					<li><a href="#" class="footer__link">О компании</a></li>
+				</ul>
+			</nav>
+		</div>
 		</footer>
 	</div>
 

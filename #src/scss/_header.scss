@@ -67,6 +67,14 @@
     &__fav{
         display: flex;
         align-items: center;
+        cursor: pointer;
+        transition: all .3s ease;
+        &:hover span{
+            filter: invert(50%) sepia(100%) saturate(600%)
+        }
+        &:hover{
+            text-decoration: underline;
+        }
 
         span{
             height: 30px;
@@ -110,6 +118,10 @@
         color: #fff;
         padding: 0 10px;
         font-size: 1.5rem;
+        &--underline{
+            text-decoration: underline;
+            text-decoration-style: dashed;
+        }
     }
     &__icon{
         height: $menuHeight;
