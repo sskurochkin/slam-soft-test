@@ -404,12 +404,14 @@ html {
 }
 
 body {
-  background-color: #E5E5E5;
+  background-color: #fff;
   font-family: 'Roboto', serif;
 }
 
 .page {
+  position: relative;
   font-size: 1.5rem;
+  padding-top: 126px;
 }
 
 .container {
@@ -453,7 +455,47 @@ body {
   color: #894083;
 }
 
+.intro {
+  width: 100%;
+  height: 800px;
+  margin-bottom: 40px;
+}
+
+.intro img {
+  width: 100%;
+  height: 100%;
+}
+
+.intro p {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 90%;
+  margin: auto;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 72px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.intro p span {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  text-align: center;
+}
+
 .first-slider {
+  display: none;
   width: 100%;
   height: 800px;
   margin-bottom: 40px;
@@ -487,6 +529,10 @@ body {
   text-align: center;
 }
 
+.first-slider.active {
+  display: block;
+}
+
 .slider__item {
   width: 100%;
   height: 100%;
@@ -510,6 +556,16 @@ body {
   margin: auto 0;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
+}
+
+.yellow {
+  -webkit-filter: invert(50%) sepia(100%) saturate(600%);
+          filter: invert(50%) sepia(100%) saturate(600%);
+}
+
+.yellow:hover {
+  -webkit-filter: invert(0%) sepia(0%) saturate(0%);
+          filter: invert(0%) sepia(0%) saturate(0%);
 }
 
 .next {
@@ -560,6 +616,10 @@ body {
   background-image: url(../../assets/img/fav.png);
 }
 
+.i-fav-fill {
+  background-image: url(../../assets/img/fav-fill.png);
+}
+
 .i-cart {
   background-image: url(../../assets/img/cart.png);
 }
@@ -572,8 +632,35 @@ body {
   background-image: url(../../assets/img/inc.svg);
 }
 
+.i-fb {
+  background-image: url(../../assets/img/fb.png);
+}
+
+.i-inst {
+  background-image: url(../../assets/img/inst.png);
+}
+
+.i-mail-alt::before {
+  background-image: url(../../assets/img/mail-alt.png);
+}
+
+.i-phone-alt::before {
+  background-image: url(../../assets/img/phone-alt.png);
+}
+
+.i-time::before {
+  background-image: url(../../assets/img/time.png);
+}
+
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
   background-color: #fff;
+  -webkit-box-shadow: 0 0 8px 2px rgba(54, 54, 54, 0.15);
+          box-shadow: 0 0 8px 2px rgba(54, 54, 54, 0.15);
   height: 126px;
 }
 
@@ -672,8 +759,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
 }
 
 .header__fav:hover span {
@@ -689,6 +774,8 @@ body {
   height: 30px;
   width: 30px;
   margin-right: 15px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
 .header__cart {
@@ -702,6 +789,11 @@ body {
 
 .header__price {
   margin-left: 12px;
+  cursor: pointer;
+}
+
+.header__price:hover {
+  text-decoration: underline;
 }
 
 .menu {
@@ -751,6 +843,12 @@ body {
   color: #fff;
   padding: 0 10px;
   font-size: 1.5rem;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.menu__link:hover {
+  opacity: .6;
 }
 
 .menu__link--underline {
@@ -800,7 +898,11 @@ body {
 }
 
 .promo {
-  margin-bottom: 40px;
+  padding-bottom: 40px;
+  background-image: url(../../assets/img/bg.png);
+  background-size: 416px;
+  background-repeat: no-repeat;
+  background-position: 92% 140%;
 }
 
 .promo__title {
@@ -810,14 +912,105 @@ body {
   margin-bottom: 30px;
 }
 
+.promo__nojs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
 .promo__slider {
+  display: none;
   padding: 0 110px;
+  height: 550px;
+}
+
+.promo__slider .slick-list {
+  z-index: 2;
 }
 
 .promo .prev,
 .promo .next {
   top: 190px;
   bottom: auto;
+}
+
+.promo__dots-container {
+  width: 5.5rem;
+  overflow: hidden;
+  display: block;
+  padding: 0;
+  margin: 0.625rem auto;
+  height: 0.875rem;
+  position: absolute;
+  top: 500px;
+  right: 0;
+  left: 0;
+}
+
+.promo__dots {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  position: relative;
+  margin: 0;
+  list-style: none;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  bottom: unset;
+  height: 100%;
+}
+
+.promo__dots-container > ul li {
+  width: 0.625rem;
+  height: 0.625rem;
+  margin: 0 0.25rem;
+  background-color: #efd5d5;
+  border: none;
+  border-radius: 50%;
+}
+
+.promo__dots-container > ul li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 1.25rem;
+  height: 1.25rem;
+  padding: 0.3125rem;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: 0;
+  background: 0 0;
+}
+
+.promo__dots-container > ul li.p-small-1,
+.promo__dots-container > ul li.n-small-1 {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.promo__dots-container > ul li.slick-active {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  background: #3498db;
+}
+
+.promo__dots li button:before {
+  display: none;
 }
 
 .card {
@@ -871,6 +1064,10 @@ body {
   display: block;
   height: 240px;
   margin: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .card__fav {
@@ -1046,7 +1243,7 @@ body {
 .footer__list li:first-of-type {
   font-weight: 600;
   font-size: 1.8rem;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .footer__list:last-child {
@@ -1055,7 +1252,7 @@ body {
 
 .footer__link {
   color: #fff;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   display: inline-block;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
@@ -1063,5 +1260,34 @@ body {
 
 .footer__link:hover {
   opacity: .6;
+}
+
+.footer__icon {
+  padding-left: 30px;
+  position: relative;
+}
+
+.footer__icon::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto 0;
+  display: block;
+  height: 20px;
+  width: 20px;
+  background-repeat: no-repeat;
+  background-size: 18px;
+  background-position: center center;
+}
+
+.footer .ico {
+  width: 32px;
+  height: 32px;
+}
+
+.footer .ico:first-child {
+  margin-right: 5px;
 }
 /*# sourceMappingURL=main.css.map */

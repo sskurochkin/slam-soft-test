@@ -1,5 +1,11 @@
 .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
     background-color: #fff;
+    box-shadow: 0 0 8px 2px rgba(54, 54, 54, 0.15);
     height: $header;
     &__content{
         height: $header - $menuHeight;
@@ -68,7 +74,6 @@
         display: flex;
         align-items: center;
         cursor: pointer;
-        transition: all .3s ease;
         &:hover span{
             filter: invert(50%) sepia(100%) saturate(600%)
         }
@@ -80,13 +85,19 @@
             height: 30px;
             width: 30px;
             margin-right: 15px;
+            transition: all .3s ease;
         }
     }
     &__cart{
-        display: flex;align-items: center;
+        display: flex;
+        align-items: center;
     }
     &__price{
         margin-left: 12px;
+        cursor: pointer;
+        &:hover{
+            text-decoration: underline;
+        }
     }
 }
 
@@ -118,6 +129,10 @@
         color: #fff;
         padding: 0 10px;
         font-size: 1.5rem;
+        transition: all .3s ease;
+        &:hover{
+            opacity: .6;
+        }
         &--underline{
             text-decoration: underline;
             text-decoration-style: dashed;

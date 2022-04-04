@@ -15,7 +15,9 @@ body{
     font-family: 'Roboto', serif;
 }
 .page{
+    position: relative;
     font-size: 1.5rem;
+    padding-top: $header;
 }
 
 .container{
@@ -47,6 +49,39 @@ body{
     &--outline{
         background-color: #fff;
         color: $primary;
+    }
+}
+
+
+.intro {
+    width: 100%;
+    height: 800px;
+    margin-bottom: 40px;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    p {
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 90%;
+        margin: auto;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 72px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+
+        span {
+            flex-basis: 100%;
+            text-align: center;
+        }
     }
 }
 

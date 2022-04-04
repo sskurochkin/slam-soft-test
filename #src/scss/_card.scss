@@ -41,6 +41,8 @@
         display: block;
         height: 240px;
         margin: auto;
+        object-fit: contain;
+        object-position: center;
     }
 
     &__fav {

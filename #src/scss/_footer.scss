@@ -14,7 +14,7 @@
         li:first-of-type{
             font-weight: 600;
             font-size: 1.8rem;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
         &:last-child{
             margin-right: 0;
@@ -22,11 +22,37 @@
     }
     &__link{
         color: #fff;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
         display: inline-block;
         transition: all .3s ease;
         &:hover{
             opacity: .6;
+        }
+    }
+    &__icon{
+        padding-left: 30px;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto 0;
+            display: block;
+            height: 20px;
+            width: 20px;
+            background-repeat: no-repeat;
+            background-size: 18px;
+            background-position: center center;
+
+        }
+    }
+    .ico{
+        width: 32px;
+        height: 32px;
+        &:first-child{
+            margin-right: 5px;
         }
     }
 }
