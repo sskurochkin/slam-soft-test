@@ -9,6 +9,7 @@
     height: $header;
     &__content{
         height: $header - $menuHeight;
+        position: relative;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -25,7 +26,8 @@
     &__logo{
         flex: 0 0 156px;
         img{
-            width: 100%;
+            width: 156px;
+            height: 100%;
         }
     }
     &__quote{
@@ -115,6 +117,8 @@
             margin: 0 10px;
             height: $menuHeight;
             line-height: $menuHeight;
+
+
         }
         &:last-of-type{
             justify-content: end;
@@ -148,14 +152,17 @@
                 margin-right: 5px;
             }
     }
+    &__btn{
+        display: none;
+        position: absolute;
+        top: 8px;
+        left: 25px;
+        font-size: 24px;
+        font-weight: bold;
+        z-index: 2;
+    }
 }
 
-.logo{
-    background-image: url(../../assets/img/logo.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-}
 .cart{
     width: 32px;
     height: 32px;

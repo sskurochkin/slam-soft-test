@@ -6,12 +6,11 @@
 .ico--mr{
     margin-right: 5px;
 }
+
+
 .i-mail{background-image: url(../../assets/img/mail.png);}
-.i-mts{
-background-image: url(../../assets/img/mts.png);
-}
-.i-a1{background-image: url(../../assets/img/a1.png);
-}
+.i-mts{background-image: url(../../assets/img/mts.png);}
+.i-a1{background-image: url(../../assets/img/a1.png);}
 .i-phone{background-image: url(../../assets/img/phone.png);}
 .i-login{background-image: url(../../assets/img/login.png);}
 .i-search{background-image: url(../../assets/img/search.png);}
@@ -24,6 +23,7 @@ background-image: url(../../assets/img/mts.png);
 .i-fb{background-image: url(../../assets/img/fb.png); }
 .i-inst{background-image: url(../../assets/img/inst.png);}
 
+//footer icons
 .i-mail-alt::before{background-image: url(../../assets/img/mail-alt.png);}
 .i-phone-alt::before{background-image: url(../../assets/img/phone-alt.png);}
 .i-time::before{background-image: url(../../assets/img/time.png);}

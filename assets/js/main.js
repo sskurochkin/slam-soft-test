@@ -60,8 +60,8 @@ $(document).ready(function() {
       }
     });
   
-    $('.promo__slider').slick({
-        infinite: true,
+    $('.promo__slider').show().slick({
+        infinite: false,
         variableWidth: true,
         dots: true,
         dotsClass: 'promo__dots',
@@ -80,16 +80,16 @@ $('.first-slider').show().slick({
     prevArrow: "<span class='prev hover-y'></span>",
     nextArrow: "<span class='next hover-y'></span>",
 });
-$('.promo__slider').show().slick({
-    variableWidth: true,
-    infinity: false,
-    dots: true,
-    dotsClass: 'promo__dots',
-    slidesToShow: 1,
-    focusOnSelect: true,
-    slidesToScroll: 1,
-    lazyLoad: 'ondemand',
-    prevArrow: "<span class='prev yellow hover-w'></span>",
-    nextArrow: "<span class='next yellow hover-w'></span>",
-});
+// $('.promo__slider').show().slick({
+//     variableWidth: true,
+//     infinity: false,
+//     dots: true,
+//     dotsClass: 'promo__dots',
+//     slidesToShow: 1,
+//     focusOnSelect: true,
+//     slidesToScroll: 1,
+//     lazyLoad: 'ondemand',
+//     prevArrow: "<span class='prev yellow hover-w'></span>",
+//     nextArrow: "<span class='next yellow hover-w'></span>",
+// });
 
