@@ -45,14 +45,14 @@
 }
 
 .promo__dots-container {
-    width: 5.5rem;
+    width: 120px;
     overflow: hidden;
     display: block;
     padding: 0;
     margin: 0.625rem auto;
     height: 0.875rem;
     position: absolute;
-    top: 500px;
+    top: 540px;
     right: 0;
     left: 0;
   }
@@ -73,7 +73,7 @@
   .promo__dots-container > ul li {
     width: 0.625rem;
     height: 0.625rem;
-    margin: 0 0.25rem;
+    margin: 0 10px;
     background-color: #bdbdbd;
     border: none;
     border-radius: 50%;
