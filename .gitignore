@@ -1,6 +1,6 @@
 # misc
 /.idea
-/#src
+/\#src
 .code-workspace
 .DS_Store
 .env.local

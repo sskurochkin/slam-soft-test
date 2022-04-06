@@ -65,10 +65,26 @@ $(document).ready(function() {
         variableWidth: true,
         dots: true,
         dotsClass: 'promo__dots',
-        slidesToShow: 4,
+        slidesToShow: 3,
         lazyLoad: 'ondemand',
         prevArrow: "<span class='prev yellow hover-w'></span>",
         nextArrow: "<span class='next yellow hover-w'></span>",
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              dots: false,
+            }
+          },
+          {
+            breakpoint: 560,
+            settings: {
+              arrows: false,
+              dots: false
+            }
+          }
+        ]
     });
   });
 
@@ -79,17 +95,14 @@ $('.first-slider').show().slick({
     lazyLoad: 'ondemand',
     prevArrow: "<span class='prev hover-y'></span>",
     nextArrow: "<span class='next hover-y'></span>",
+    responsive: [
+      {
+        breakpoint: 560,
+        settings: {
+          arrows: false,
+        }
+      }
+    ]
 });
-// $('.promo__slider').show().slick({
-//     variableWidth: true,
-//     infinity: false,
-//     dots: true,
-//     dotsClass: 'promo__dots',
-//     slidesToShow: 1,
-//     focusOnSelect: true,
-//     slidesToScroll: 1,
-//     lazyLoad: 'ondemand',
-//     prevArrow: "<span class='prev yellow hover-w'></span>",
-//     nextArrow: "<span class='next yellow hover-w'></span>",
-// });
+
 
